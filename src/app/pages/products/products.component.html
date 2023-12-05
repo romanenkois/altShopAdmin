@@ -1,1 +1,16 @@
-<app-header></app-header>
+<div>
+    <app-header style="width: 20%; background-color: blue;"></app-header>
+    <div style="width: 80%; background-color: blue;">
+        {{products}}
+        <p>{{dataaa}}</p>
+        nasnd
+        sadasdas
+        <p (click)="printToConsole()">test dataaaaaaaaa</p>
+        <mat-grid-tile *ngFor="let product of products">
+            <app-product-box
+            [product]="product"
+            class="w-full"
+            ></app-product-box>
+        </mat-grid-tile>
+    </div>
+</div>

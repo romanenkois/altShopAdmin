@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { Product } from 'src/app/models/product.model';
 import { BridgeService } from 'src/app/services/bridge.service';
 
@@ -13,14 +14,24 @@ export class ProductsComponent implements OnInit {
 
   products: Array<Product> | undefined;
 
+  dataaa: string | undefined;
+
+  productsSubscription: Subscription | undefined;
+
+  printToConsole(): void {
+    console.log(this.dataaa);
+  }
+
   getProducts(): void {
-    this.bridgeService.getAllProducts()
-      .subscribe((_products) => {
-        this.products = _products;
+    this.productsSubscription = this.bridgeService.getAllProducts()
+      .subscribe((_prosucts) => {
+        this.products = _prosucts;
       })
   }
 
   ngOnInit(): void {
-
+    //this.getProducts();
+    this.getProducts();
+    console.log(this.dataaa, "i");
   }
 }

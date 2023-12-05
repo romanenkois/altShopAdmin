@@ -1,3 +1,6 @@
+export interface ProductList {
+    items: Array<Product>;
+}
 interface sizeAndQuantity {
     s?: number;
     m?: number;

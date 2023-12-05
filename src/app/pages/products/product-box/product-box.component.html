@@ -1,0 +1,21 @@
+<div *ngIf="product" [ngClass]="{'text-center': !fullWidthMode}">
+    <div [ngClass]="{flex: fullWidthMode}">
+        <img class="mb-1 mx-auto h-[200px]"
+            [ngClass]="{'h-200px': !fullWidthMode, 'h-[360px]' : fullWidthMode}"
+            [src]="product.image"
+        />
+        <div class="w-full" [ngClass]="{'px-8 flex flex-col justify-between': fullWidthMode}">
+            <div>
+                <p >{{product.category}}</p>
+                <p  class="truncate hover:whitespace-normal">{{product.title}}</p>
+                <p *ngIf="fullWidthMode">{{product.description}}</p>
+            </div>
+            <div class="flex justify-between px-4">
+                <span class="text-yellow-500 font-bold">{{ product.price| currency: '₴'}}</span>
+                <button (click)="onAddToCart()">
+                    <span>add</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
