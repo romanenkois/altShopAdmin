@@ -18,7 +18,5 @@ export class ProductsPageComponent {
       this.productsData = data;
       console.log(this.productsData)
     });
-
-    
   }
 }

@@ -8,6 +8,7 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 import { ImagesPageComponent } from './pages/images-page/images-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductBoxComponent } from './components/product-box/product-box.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomePageComponent,
     ProductsPageComponent,
     ImagesPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProductBoxComponent
   ],
   imports: [
     BrowserModule,
