@@ -4,3 +4,16 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+* {
+    outline: 1px solid red;
+}
+
+.debug {
+    outline: 4px solid blue;
+}
+
+.debug2 {
+    outline: 4px solid green;
+}
+

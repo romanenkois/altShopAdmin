@@ -15,6 +15,7 @@ import { registerLocaleData } from '@angular/common';
 import uk from '@angular/common/locales/uk';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OrdersPageComponent } from './pages/orders-page/orders-page.component';
 
 registerLocaleData(uk);
 
@@ -25,7 +26,8 @@ registerLocaleData(uk);
     ProductsPageComponent,
     ImagesPageComponent,
     HeaderComponent,
-    ProductBoxComponent
+    ProductBoxComponent,
+    OrdersPageComponent
   ],
   imports: [
     BrowserModule,
