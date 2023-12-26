@@ -15,8 +15,9 @@ export class ProductsPageComponent {
 
   ngOnInit() {
     this.BridgeService.getProductsData().subscribe((data:any) => {
+      
       this.productsData = data;
-      console.log(this.productsData)
+      //console.log(this.productsData)
     });
   }
 }

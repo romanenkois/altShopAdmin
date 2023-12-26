@@ -1,6 +1,11 @@
 <div>
     <app-header></app-header>
-    <div style="width: 80%;">
+    <div class="debug flex">
+        <div *ngFor="let product of productsData">
+            <app-product-box
+            [product]="product">
+            </app-product-box>
+        </div>
         nasnd
         sadasdas
         <p class="font-bold">Bold</p>

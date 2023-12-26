@@ -14,7 +14,7 @@ export class BridgeService {
     return this.http.get(`${this.API_BASE_URL}/products/`);
   }
 
-  getProductData(id: number): Observable<any> {
+  getProductData(id: string): Observable<any> {
     return this.http.get(`${this.API_BASE_URL}/products/${id}`);
   }
 
@@ -22,7 +22,11 @@ export class BridgeService {
     return this.http.get(`${this.API_BASE_URL}/images/`);
   }
 
-  getImageData(id: number): Observable<any> {
+  getImageData(id: string): Observable<any> {
     return this.http.get(`${this.API_BASE_URL}/images/${id}`);
+  }
+
+  getImage(url: string): Observable<any> {
+    return this.http.get(url, { responseType: 'text' });
   }
 }

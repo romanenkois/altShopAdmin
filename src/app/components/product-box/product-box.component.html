@@ -1,0 +1,11 @@
+<div *ngIf="product" class="">
+    <div class="w-full">
+        <img class="m-2 mx-auto h-200px"
+        [src]="product.image"
+        [alt]="product.name">       
+    </div>
+    <div class="w-full">
+        <p>{{product.name}}</p>
+        <p>{{product.price}}</p>
+    </div>
+</div>
