@@ -1,8 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
 import { BridgeService } from 'src/app/services/bridge.service';
-import { map } from 'rxjs';
-import { Observable } from 'rxjs/internal/Observable';
 
 @Component({
   selector: 'app-product-box',

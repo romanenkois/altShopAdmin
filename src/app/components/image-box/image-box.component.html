@@ -1,0 +1,10 @@
+<div *ngIf="imageData" class="">
+    <div class="w-full">
+        <img class="m-2 mx-auto h-200px"
+        [src]="imageData.image"
+        [alt]="imageData.name">       
+    </div>
+    <div class="w-full">
+        <p>{{imageData.name}}</p>
+    </div>
+</div>

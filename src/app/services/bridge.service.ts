@@ -18,7 +18,7 @@ export class BridgeService {
     return this.http.get(`${this.API_BASE_URL}/products/${id}`);
   }
 
-  getAllImagesData(): Observable<any> {
+  getImagesData(): Observable<any> {
     return this.http.get(`${this.API_BASE_URL}/images/`);
   }
 
