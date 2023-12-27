@@ -16,7 +16,7 @@ export class Error404PageComponent {
       if (this.redirect) {
         window.location.href = "./home";
       }
-    }, 5000);
+    }, 10000);
     setInterval(() => {
       if (this.dots.length < 3) {
         this.dots += ".";
