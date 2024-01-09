@@ -20,6 +20,7 @@ import { ImageBoxComponent } from './components/image-box/image-box.component';
 import { OrderBoxComponent } from './components/order-box/order-box.component';
 import { UserBoxComponent } from './components/user-box/user-box.component';
 import { Error404PageComponent } from './pages/error404-page/error404-page.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
 
 registerLocaleData(uk);
 
@@ -35,7 +36,8 @@ registerLocaleData(uk);
     ImageBoxComponent,
     OrderBoxComponent,
     UserBoxComponent,
-    Error404PageComponent
+    Error404PageComponent,
+    ProductPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,23 @@
 <div>
     <app-header></app-header>
-    <div class="debug">
-        <div *ngFor="let product of productsData">
-            <app-product-box
-            [product]="product">
-            </app-product-box>
+    <div class="flex flex-row">
+        <div class="basis-1/2 w-full">
+            <p>ksajdkasjd</p>
         </div>
-        <p class="font-bold">Bold</p>
+        <div class="basis-1/2 w-full">
+            <div class="container">
+                <span>
+                    1
+                </span>
+                <span>
+                    2
+                </span>
+            </div>
+            <div *ngFor="let product of productsData">
+                <app-product-box class="w-full"
+                [product]="product">
+                </app-product-box>
+            </div>
+        </div>
     </div>
 </div>
