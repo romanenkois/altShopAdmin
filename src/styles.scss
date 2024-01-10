@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 //postcss.config.js
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+// @import 'tailwindcss/base';
+// @import 'tailwindcss/components';
+// @import 'tailwindcss/utilities';
+
+// NORMALIZE
+
+@import 'normalize.css';
 
 * {
     outline: 1px solid red;
@@ -17,3 +21,29 @@
     outline: 4px solid green;
 }
 
+.bg-primary {
+    background-color: #ffde0a;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.mp-0 {
+    margin: 0;
+    padding: 0;    
+}
+
+.div-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 ;
+}
+
+.span-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 ;
+}
