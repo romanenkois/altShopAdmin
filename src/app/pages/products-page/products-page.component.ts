@@ -15,10 +15,10 @@ export class ProductsPageComponent {
   constructor(private BridgeService: BridgeService) { }
 
   ngOnInit() {
-    this.BridgeService.getProductsData().subscribe((data:any) => {
-      
+    this.BridgeService.getProductsData().subscribe((data:any) => {  
       this.productsData = data;
-      //console.log(this.productsData)
+
+    
     });
   }
 }

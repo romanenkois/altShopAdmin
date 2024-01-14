@@ -1,32 +1,33 @@
-<div>
-    <app-header></app-header>
-    <div class="flex flex-row">
-        <div class="basis-1/2 w-full">
-            <p>ksajdkasjd</p>
+<app-header></app-header>
+<div class="flex flex-row">
+    <div class="basis-1/2 w-full">
+        <p>ksajdkasjd</p>
+    </div>
+    <div class="basis-1/2 w-full">
+        <div class="container">
+            <span (click)="columns = 1">
+                1
+            </span>
+            <span (click)="columns = 2">
+                2
+            </span>
+            <span (click)="columns = 3">
+                3
+            </span>
         </div>
-        <div class="basis-1/2 w-full">
-            <div class="container">
-                <span (click)="columns = 1">
-                    1
-                </span>
-                <span (click)="columns = 2">
-                    2
-                </span>
-                <span (click)="columns = 3">
-                    3
-                </span>
-            </div>
-            <div class="grid"
-            [ngClass]="[
-                columns === 1 ? 'grid-cols-1' : '',
-                columns === 2 ? 'grid-cols-2' : '',
-                columns === 3 ? 'grid-cols-3' : '']"
-            >
-                <div *ngFor="let product of productsData">
-                    <app-product-box class="w-full"
-                    [product]="product">
-                    </app-product-box>
-                </div>
+
+        <div
+        style="overflow:scroll; height:100%;"
+        class="grid"
+        [ngClass]="[
+            columns === 1 ? 'grid-cols-1' : '',
+            columns === 2 ? 'grid-cols-2' : '',
+            columns === 3 ? 'grid-cols-3' : '']"
+        >
+            <div *ngFor="let product of productsData">
+                <app-product-box class="w-full"
+                [product]="product">
+                </app-product-box>
             </div>
         </div>
     </div>
