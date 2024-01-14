@@ -10,6 +10,7 @@ import { BridgeService } from 'src/app/services/bridge.service';
 })
 export class ProductsPageComponent {
   productsData: any[] = [];
+  columns: number = 3;
 
   constructor(private BridgeService: BridgeService) { }
 
