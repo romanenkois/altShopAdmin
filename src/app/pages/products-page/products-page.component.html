@@ -19,10 +19,13 @@
             <span (click)="columns = 3">
                 3
             </span>
-            <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+            <!-- <button mat-button [matMenuTriggerFor]="menu">Кіль-сть колонок</button>
             <mat-menu #menu="matMenu">
-            <button mat-menu-item>Item 1</button>
-            <button mat-menu-item>Item 2</button>
+                <button mat-menu-item (click)="columns = 1">1</button>
+                <button mat-menu-item (click)="columns = 2">2</button>
+                <button mat-menu-item (click)="columns = 3">3</button>
+                <button mat-menu-item (click)="columns = 4">4</button>
+                <button mat-menu-item (click)="columns = 5">5</button>
             </mat-menu> -->
         </div>
 
@@ -34,7 +37,9 @@
         [ngClass]="[
             columns === 1 ? 'grid-cols-1' : '',
             columns === 2 ? 'grid-cols-2' : '',
-            columns === 3 ? 'grid-cols-3' : '']"
+            columns === 3 ? 'grid-cols-3' : '',
+            columns === 4 ? 'grid-cols-4' : '',
+            columns === 5 ? 'grid-cols-5' : '']"
         >
             <div *ngFor="let product of productsData">
                 <app-product-box class="w-full"
